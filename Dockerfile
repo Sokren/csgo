@@ -1,5 +1,5 @@
 FROM debian
-MAINTAINER Remi Salandre
+MAINTAINER Sokren
 # Updating Container and download pre requisites
 RUN dpkg --add-architecture i386 ; apt-get update ; apt-get install -y curl lib32gcc1 libstdc++6 libstdc++6:i386 screen
 # Create user and directories
