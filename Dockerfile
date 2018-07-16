@@ -14,6 +14,6 @@ RUN /opt/steam/steamcmd/steamcmd.sh +login anonymous +force_install_dir ./csgo/ 
 # Auto connect to steamcmd 
 #ENTRYPOINT ["/opt/steam/steamcmd/steamcmd.sh"]
 ENTRYPOINT ["/opt/steam/steamcmd/csgo/srcds_run"]
-CMD ["+maxplayers 16 +map de_dust2"]
+CMD ["+maxplayers", "16", "+map", "de_dust2"]
 # Expose the port to connect to the server
 EXPOSE 27015/udp
